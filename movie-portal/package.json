@@ -8,9 +8,12 @@
   },
   "license": "MIT",
   "dependencies": {
-    "aurelia-bootstrapper": "^1.0.0",
     "aurelia-animator-css": "^1.0.0",
+    "aurelia-bootstrapper": "^1.0.0",
+    "aurelia-http-client": "^1.0.4",
     "bluebird": "^3.4.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^2.2.4",
     "requirejs": "^2.3.2",
     "text": "github:requirejs/text#latest"
   },
@@ -44,5 +47,13 @@
     "karma-chrome-launcher": "^1.0.1",
     "karma-jasmine": "^1.0.2",
     "karma-typescript-preprocessor": "^0.2.1"
+  },
+  "jspm": {
+    "dependencies": {
+      "aurelia-autocomplete": "npm:aurelia-autocomplete@^2.0.0"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^2.0.7"
+    }
   }
 }
