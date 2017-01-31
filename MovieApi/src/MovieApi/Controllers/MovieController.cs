@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using TodoApi.Models;
+using MovieApi.Models;
 
 namespace MovieApi.Controllers
 {
-    [Route("api/movie")]
+    [Route("api/movies")]
     public class MovieController : Controller
     {
         public MovieController(IMovieRepository movieItems)
@@ -15,7 +15,7 @@ namespace MovieApi.Controllers
         public IMovieRepository MovieItems { get; set; }
 
         [HttpGet]
-        public IEnumerable<TodoItem> GetAll()
+        public IEnumerable<MovieItem> GetAll()
         {
             return MovieItems.GetAll();
         }

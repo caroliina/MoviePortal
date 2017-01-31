@@ -4,7 +4,7 @@ namespace MovieApi.Models
 {
     public interface IMovieRepository
     {
-        IEnumerable<TodoItem> GetAll();
-        TodoItem FindById(int id);
+        IEnumerable<MovieItem> GetAll();
+        MovieItem FindById(int id);
     }
 }

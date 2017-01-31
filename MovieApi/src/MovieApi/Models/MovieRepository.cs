@@ -11,7 +11,7 @@ namespace MovieApi.Models
 
         public MovieRepository()
         {
-            Add(new MovieItem { Title = "Superfantastic Movie" });
+            Add(new MovieItem { Id = 1, Title = "Harry Potter", Category = "fantasy", Rating = 5, Year = "2014" });
         }
 
         public IEnumerable<MovieItem> GetAll()
@@ -24,6 +24,11 @@ namespace MovieApi.Models
             MovieItem item;
             _movies.TryGetValue(id, out item);
             return item;
+        }
+
+        public void Add(MovieItem item)
+        {
+            _movies[item.Id] = item;
         }
     }
 }
