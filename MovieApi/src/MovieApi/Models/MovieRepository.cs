@@ -12,6 +12,8 @@ namespace MovieApi.Models
         public MovieRepository()
         {
             Add(new MovieItem { Id = 1, Title = "Harry Potter", Category = "fantasy", Rating = 5, Year = "2014" });
+            Add(new MovieItem { Id = 2, Title = "Superman", Category = "scifi", Rating = 5, Year = "2014" });
+            Add(new MovieItem { Id = 3, Title = "Batman", Category = "scifi", Rating = 5, Year = "2015" });
         }
 
         public IEnumerable<MovieItem> GetAll()
