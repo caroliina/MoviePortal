@@ -1,5 +1,4 @@
 <template>
-  <auto-complete items.bind="movies" attribute="title"></auto-complete>
   <div class="movie-list">
     <ul class="list-group">
       <li repeat.for="movie of movies" class="list-group-item ${movie.id === $parent.selectedId ? 'active' : ''}">
